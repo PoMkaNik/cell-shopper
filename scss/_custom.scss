@@ -69,6 +69,10 @@ a.button.secondary:hover {
 .main-navigation {
   margin-bottom: 30px;
 
+  @media screen and (max-width: 63.99875em) {
+    margin-bottom: 20px;
+  }
+
   @media screen and (max-width: 39.99875em) {
     margin-bottom: 10px;
   }
