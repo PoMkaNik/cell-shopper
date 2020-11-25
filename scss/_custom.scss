@@ -1,0 +1,199 @@
+body {
+  font-size: 13px;
+}
+
+a {
+  color: $primary-color;
+}
+
+button,
+a.button {
+  background-color: $primary-color;
+}
+
+button:hover,
+a.button:hover {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+button.secondary,
+a.button.secondary {
+  background-color: $secondary-color;
+}
+
+button.secondary:hover,
+a.button.secondary:hover {
+  background-color: $primary-color;
+}
+
+.hide-320 {
+  @media screen and (max-width: 350px) {
+    display: none;
+  }
+}
+
+.top-nav {
+  background-color: $secondary-color;
+  text-transform: uppercase;
+
+  .menu {
+    justify-content: flex-end;
+
+    @media screen and (max-width: 39.99875em) {
+      justify-content: center;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.second-nav {
+  font-size: 16px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
+
+  .header-card {
+    padding-right: 15px;
+    @media screen and (max-width: 400px) {
+      padding-right: 0;
+    }
+  }
+}
+
+.main-navigation {
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 39.99875em) {
+    margin-bottom: 10px;
+  }
+
+  .title-bar {
+    height: 40px;
+  }
+
+  .top-bar-right .menu {
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: 39.99875em) {
+      justify-content: start;
+    }
+  }
+
+  .menu a,
+  .dropdown.menu a {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+}
+
+.showcase {
+  &__menu {
+    margin-bottom: 10px;
+
+    h3 {
+      background-color: $primary-color;
+      color: $white;
+      padding: 5px;
+      margin: 1px 1px 0 1px;
+      font-size: 18px;
+
+      @media screen and (max-width: 39.99875em) {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+
+    ul {
+      justify-content: space-around;
+      font-size: 16px;
+
+      li {
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: $secondary-color;
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &__slider {
+    .orbit-bullets button {
+      width: 2rem;
+      height: 0.4rem;
+      border-radius: 0;
+
+      &.is-active {
+        background-color: $primary-color;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+
+      @media screen and (max-width: 39.99875em) {
+        // width: 0.5rem;
+        // height: 0.5rem;
+        // border-radius: 50%;
+        display: none;
+      }
+    }
+  }
+}
+
+footer {
+  color: $white;
+  background-color: $secondary-color;
+
+  .cell {
+    background-color: $secondary-color;
+  }
+
+  a,
+  h4 {
+    color: $white;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 63.99875em) {
+    background: $white;
+
+    h4 {
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .grid-x .cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 39.99875em) {
+    .grid-x .cell {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .cell.small-6 {
+      width: calc(100% - 1.25rem);
+    }
+  }
+}

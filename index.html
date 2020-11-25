@@ -8,11 +8,254 @@
   <link rel="stylesheet" href="node_modules/motion-ui/dist/motion-ui.min.css">
   <!-- custom css -->
   <link rel="stylesheet" href="css/app.css">
-  <title>TeamFitness</title>
+  <title>CellShopper | Welcome</title>
 </head>
 
 <body>
+  <div class="top-nav">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell large-12">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="second-nav grid-container">
+    <div class="grid-x align-middle">
+      <div class="cell small-7">
+        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      </div>
+      <div class="cell small-5 text-right">
+        <div class="header-card">
+          Welcome, <strong>John</strong>
+          <br>
+          <a href="cart.html">Your cart: </a>$0.00 (0)
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-navigation">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell large-12">
+          <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+            <div class="title-bar-title"></div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="top-bar" id="responsive-menu">
+        <div class="grid-x width-100">
+          <div class=" cell medium-10 large-7 top-bar-left">
+            <ul class="vertical medium-horizontal menu">
+              <li><a href="products.html">Smartphones</a></li>
+              <li><a href="products.html">Tablets</a></li>
+              <li><a href="products.html">GPS</a></li>
+              <li><a href="products.html">Laptops</a></li>
+              <li><a href="products.html">Cases</a></li>
+              <li><a href="products.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="cell medium-2 large-5 top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="hide-for-medium-only hide-320"><input type="search" placeholder="Search Store..."></li>
+              <li class="hide-for-medium-only hide-320"><button type="button" class="button alert">Search</button></li>
+              <li class="has-submenu">
+                <a href="#0">Account</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#0">My Profile</a></li>
+                  <li><a href="#0">Billing Details</a></li>
+                  <li><a href="#0">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="showcase grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-3">
+        <div class="showcase__menu">
+          <div class="grid-x">
+            <div class="cell large-12 medium-5">
+              <h3>Browse By Manufacture</h3>
+
+            </div>
+            <div class="cell large-12 medium-7">
+              <ul class="horizontal large-vertical menu">
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">LG</a></li>
+                <li><a href="#">HTC</a></li>
+                <li><a href="#">Sony</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cell large-9">
+        <div class="showcase__slider orbit-slider">
+
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <div class="orbit-wrapper">
+
+              <div class="orbit-controls">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+              </div>
+
+              <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="img/slide1.jpg" alt="slide1">
+                    <figcaption class="orbit-caption">Apple iPhone 6</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="img/slide2.jpg" alt="slide2">
+                    <figcaption class="orbit-caption">Samsung S5 Galaxy</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="img/slide3.jpg" alt="slide3">
+                    <figcaption class="orbit-caption">LG G2</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0">
+                <span class="show-for-sr">First slide details.</span>
+                <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+              </button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x text-center">
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone6.png" alt="iphone6">
+          <h5>Apple iPhone 6</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone5.png" alt="iphone5">
+          <h5>Apple iPhone 5</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone4.png" alt="iphone4">
+          <h5>Apple iPhone 4</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/samsungs6.png" alt="Samsung6">
+          <h5>Samsung Galaxy S6</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/samsungs5.png" alt="samsungs5">
+          <h5>Samsung Galaxy S5</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone6.png" alt="iphone6">
+          <h5>Apple iPhone 6</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone4.png" alt="iphone4">
+          <h5>Apple iPhone 4</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+      <div class="cell large-3 medium-6">
+        <div class="phone bordered margin-bottom-1">
+          <img src="img/iphone5.png" alt="iphone5">
+          <h5>Apple iPhone 5</h5>
+          <a href="product.html" class="button tiny">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+        <div class="cell small-6 large-3">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="cell small-6 large-3">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="cell small-6 large-3">
+          <h4>Your Account</h4>
+          <ul>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Credit Slips</a></li>
+            <li><a href="#">Billing Information</a></li>
+          </ul>
+        </div>
+        <div class="cell small-6 large-3">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li>(888) 555-5555</li>
+            <li><a href="#">support@cellshopper.com</a></li>
+            <li><a href="#">Submit a Ticket</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="node_modules/jquery/dist/jquery.js"></script>
