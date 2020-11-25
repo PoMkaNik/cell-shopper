@@ -260,3 +260,47 @@ footer {
     font-size: 20px;
   }
 }
+
+.cart {
+  margin-bottom: 10px;
+
+  h3 {
+    @media screen and (max-width: 39.99875em) {
+      font-size: 30px;
+    }
+  }
+
+  &__list-header,
+  &__total {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: $secondary-color;
+    color: $white;
+
+    .button {
+      margin: 10px;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 63.99875em) {
+      font-size: 16px;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    select {
+      margin: 0 10px;
+      height: auto;
+    }
+
+    .button {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+}
